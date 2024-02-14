@@ -1,3 +1,6 @@
+This repository contains a .bas file containing a VBA script to go through a dataset and find yearly opening and closing prices for each ticker in the set, and then summarizing the biggest movers among all of those tickers. It will repeat for every sheet of data in a workbook.
+The repository also contains screenshots of the results for "Multiple_year_stock_data.xlsx", for each sheet in that file.
+
 ASSUMPTIONS/CLARIFICATIONS:
 
 - we are using 1 table and creating 2 more, and I call them:
