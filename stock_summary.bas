@@ -30,7 +30,7 @@ Sub stockTotals():
         'assign variables from row 2 of raw data
         ticker = Cells(2, 1).Value
         openVal = Cells(2, 3).Value
-        changeNum = Cells(2, 6).Value - openVal
+        changeNum = Cells(2, 6).Value - openVal 'Cells(2,6).Value is the closing value - not saving that because we only care about the diff between first open and last close
         If openVal <> 0 Then 'can't divide by 0
             changePct = changeNum / openVal
         Else: changePct = 0
