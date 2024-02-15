@@ -59,6 +59,10 @@ Sub stockTotals():
                 End If
                 Cells(summRow, lastCol + 4).Value = changePct
                 Cells(summRow, lastCol + 4).NumberFormat = "0.00%"
+                If changePct < 0 Then 'conditional formatting for Pct Change
+                    Cells(summRow, lastCol + 4).Interior.ColorIndex = 3
+                Else: Cells(summRow, lastCol + 4).Interior.ColorIndex = 4
+                End If
                 Cells(summRow, lastCol + 5).Value = totalVol
                 
                 'check saved vars for rundown min/max
@@ -116,6 +120,10 @@ Sub stockTotals():
         End If
         Cells(summRow, lastCol + 4).Value = changePct
         Cells(summRow, lastCol + 4).NumberFormat = "0.00%"
+        If changePct < 0 Then 'conditional formatting for Pct Change
+            Cells(summRow, lastCol + 4).Interior.ColorIndex = 3
+        Else: Cells(summRow, lastCol + 4).Interior.ColorIndex = 4
+        End If
         Cells(summRow, lastCol + 5).Value = totalVol
         
         'check saved vars for rundown min/max
