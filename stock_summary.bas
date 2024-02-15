@@ -22,7 +22,7 @@ Sub stockTotals():
                 
         'set up summary table headers
         Cells(1, lastCol + 2).Value = "Ticker"
-        Cells(1, lastCol + 3).Value = "Yearly Change"
+        Cells(1, lastCol + 3).Value = "Yearly Change ($)"
         Cells(1, lastCol + 4).Value = "Percent Change"
         Cells(1, lastCol + 5).Value = "Total Stock Volume"
         summRow = 2
